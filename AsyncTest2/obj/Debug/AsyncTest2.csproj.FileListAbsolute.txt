@@ -35,3 +35,40 @@ c:\users\cchen\documents\visual studio 2012\Projects\AsyncTest2\AsyncTest2\obj\D
 c:\users\cchen\documents\visual studio 2012\Projects\AsyncTest2\AsyncTest2\obj\Debug\AsyncTest2.dll
 c:\users\cchen\documents\visual studio 2012\Projects\AsyncTest2\AsyncTest2\obj\Debug\AsyncTest2.pdb
 c:\users\cchen\documents\visual studio 2012\Projects\AsyncTest2\AsyncTest2\bin\Microsoft.WebSockets.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\AsyncTest2.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\AsyncTest2.pdb
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\Antlr3.Runtime.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\EntityFramework.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\Microsoft.Web.Infrastructure.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\Microsoft.WebSockets.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\Newtonsoft.Json.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Net.Http.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Net.Http.Formatting.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Net.Http.WebRequest.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Helpers.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Http.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Http.WebHost.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Mvc.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Optimization.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Providers.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Razor.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.WebPages.Deployment.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.WebPages.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.WebPages.Razor.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\WebGrease.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\EntityFramework.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\Newtonsoft.Json.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Net.Http.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Net.Http.Formatting.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Net.Http.WebRequest.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Helpers.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Http.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Http.WebHost.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Mvc.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.Razor.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.WebPages.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.WebPages.Deployment.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.WebPages.Razor.xml
+C:\gitHubTest\AsyncTest2\AsyncTest2\obj\Debug\AsyncTest2.dll
+C:\gitHubTest\AsyncTest2\AsyncTest2\obj\Debug\AsyncTest2.pdb
+C:\gitHubTest\AsyncTest2\AsyncTest2\obj\Debug\AsyncTest2.csprojResolveAssemblyReference.cache

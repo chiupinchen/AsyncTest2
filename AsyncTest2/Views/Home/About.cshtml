@@ -1,6 +1,8 @@
 ﻿@{
     ViewBag.Title = "About";
+   
 }
+@model AsyncTest2.Models.Product
 
 <hgroup class="title">
     <h1>@ViewBag.Title.</h1>
@@ -8,6 +10,10 @@
 </hgroup>
 
 <article>
+    <p>
+        @Model.Name
+
+    </p>
     <p>
         Use this area to provide additional information.
     </p>

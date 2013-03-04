@@ -30,9 +30,10 @@ namespace AsyncTest2.Controllers
 
 
         // GET api/default1
-        public IEnumerable<Product> Get()
+        [Queryable(ResultLimit=2)]
+        public IQueryable<Product> Get()
         {
-            return products; 
+            return products.AsQueryable(); 
  
         }
 

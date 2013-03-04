@@ -30,35 +30,38 @@
         //    url: "api/Bing/1",
         //    dataType: "json",
         //    success: function (data) {
-        //        debugger;
+        //        //debugger;
         //             alert(data);
         //    }
         //});
 
-        //$.ajax({
+        $.ajax({
 
-        //    type: "GET",
-        //    url: "api/Bing",
-        //    dataType: "json",
-        //    success: function (data) {
-        //        $.each(data, function (key, val) {
-        //            alert(val.Id);
-        //        });
-        //    }
-        //});
+            type: "GET",
+            //url: "api/Bing",
+            //url: "api/Bing?$skip=3",
+            url: "api/Bing?$filter=Name eq 'Yo-yo'",
+            dataType: "json",
+        success: function (data) {
+            
+                $.each(data, function (key, val) {
+                    alert(val.Id);
+                });
+            }
+        });
         
         //$.post("test.php", { name: "John", time: "2pm" });
 
-        $.ajax({
+        //$.ajax({
 
-            type: "POST",
-            url: "api/Bing/?value1=def",
-            dataType: "json",
-            data: { name: "abc", email:"cchen@gmail.com" },
-            success: function (data) {
-                debugger;
-            }
-        });
+        //    type: "POST",
+        //    url: "api/Bing/?value1=def",
+        //    dataType: "json",
+        //    data: { name: "abc", email:"cchen@gmail.com" },
+        //    success: function (data) {
+        //        debugger;
+        //    }
+        //});
 
         //$.ajax({
 
