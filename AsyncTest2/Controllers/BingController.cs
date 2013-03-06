@@ -9,7 +9,7 @@ using AsyncTest2.Models;
 namespace AsyncTest2.Controllers
 {
 
-    public class Person
+    public class LocalPerson
     {
         public string name { get; set; }
         public string email { get; set; }
@@ -44,7 +44,7 @@ namespace AsyncTest2.Controllers
         }
 
         // POST api/default1
-        public HttpResponseMessage Post(Person person)
+        public HttpResponseMessage Post(LocalPerson person)
         {
             var p = new HttpResponseMessage()
             {

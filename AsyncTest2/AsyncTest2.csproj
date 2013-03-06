@@ -47,6 +47,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -135,6 +137,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProcessController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -148,6 +151,24 @@
       <DependentUpon>WebSocketRequester.ashx</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ChiupinDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChiupinDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiupinDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChiupinDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ChiupinDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChiupinDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Person.cs">
+      <DependentUpon>ChiupinDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -184,6 +205,23 @@
     <Content Include="Handler\Handler1.ashx" />
     <Content Include="Handler\WebSocketListener.ashx" />
     <Content Include="Handler\WebSocketRequester.ashx" />
+    <EntityDeploy Include="Models\ChiupinDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ChiupinDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ChiupinDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ChiupinDB.edmx</DependentUpon>
+      <LastGenOutput>ChiupinDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ChiupinDB.edmx.diagram">
+      <DependentUpon>ChiupinDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\ChiupinDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ChiupinDB.edmx</DependentUpon>
+      <LastGenOutput>ChiupinDB.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />
     <Content Include="Scripts\jquery-1.6.2.min.js">
@@ -255,6 +293,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

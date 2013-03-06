@@ -71,4 +71,3 @@ C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.WebPages.Deployment.xml
 C:\gitHubTest\AsyncTest2\AsyncTest2\bin\System.Web.WebPages.Razor.xml
 C:\gitHubTest\AsyncTest2\AsyncTest2\obj\Debug\AsyncTest2.dll
 C:\gitHubTest\AsyncTest2\AsyncTest2\obj\Debug\AsyncTest2.pdb
-C:\gitHubTest\AsyncTest2\AsyncTest2\obj\Debug\AsyncTest2.csprojResolveAssemblyReference.cache

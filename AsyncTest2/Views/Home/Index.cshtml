@@ -23,7 +23,9 @@
 <script type="text/javascript">
     
     $(document).ready(function () {
-       
+
+
+        //#region Bing API controller access
         //$.ajax({
  
         //    type: "GET",
@@ -35,20 +37,20 @@
         //    }
         //});
 
-        $.ajax({
+        //$.ajax({
 
-            type: "GET",
-            //url: "api/Bing",
-            //url: "api/Bing?$skip=3",
-            url: "api/Bing?$filter=Name eq 'Yo-yo'",
-            dataType: "json",
-        success: function (data) {
+        //    type: "GET",
+        //    //url: "api/Bing",
+        //    //url: "api/Bing?$skip=3",
+        //    url: "api/Bing?$filter=Name eq 'Yo-yo'",
+        //    dataType: "json",
+        //success: function (data) {
             
-                $.each(data, function (key, val) {
-                    alert(val.Id);
-                });
-            }
-        });
+        //        $.each(data, function (key, val) {
+        //            alert(val.Id);
+        //        });
+        //    }
+        //});
         
         //$.post("test.php", { name: "John", time: "2pm" });
 
@@ -73,11 +75,136 @@
         //        alert(data);
         //    }
         //});
+        //#endregion
+
+
+        //#region Process controller access
+       
+        function Person(name, address, id) {
+            this.name = name;
+            this.address = address;
+            this.id = id;
+        }
+
+
+        var refresh = function ()
+        {
+            $.ajax({
+
+                type: "GET",
+                url: "api/Process",
+                dataType: "json",
+                success: function (data) {
+                    $("#ProcessAPIContainer").html("");
+                    $.each(data, function (key, val) {
+                        $("<li>").html(val.ID + ' ' + val.Name + ' ' + val.Address).appendTo($("#ProcessAPIContainer"));
+
+                    });
+
+                }
+            });
+
+        }
+
+
+        //$("#saveDBToAPI").bind("click", function () {
+           
+        //    $.ajax({
+
+        //        type: "POST",
+        //        url: "api/Process",
+        //        dataType: "json",
+        //        data: { Name: $("#name").val(), Address: $("#address").val() },
+        //        success: function (data) {
+        //            refresh();
+        //        }
+        //    });
+
+        //})
+
+        $("#saveDBToAPI").bind("click", function () {
+
+            
+
+            var person = new Person($("#name").val(),$("#address").val());
+
+            $.ajax({
+
+                type: "POST",
+                url: "api/Process",
+                dataType: "json",
+                data: person ,
+                success: function (data) {
+                    refresh();
+                }
+            });
+
+        })
+
+        $("#deleteDBToAPI").bind("click", function () {
+
+            $.ajax({
+
+                type: "DELETE",
+                url: "api/Process/" + $("#deleteID").val(),
+                dataType: "json",
+                //data: { id: $("#deleteID").val() },
+                success: function (data) {
+
+                    refresh();
+
+                }
+            });
+
+        })
+
+        $("#updateDBToAPI").bind("click", function () {
+
+            var person = new Person($("#updateName").val(), $("#updateAddress").val(), $("#updateID").val());
+
+            $.ajax({
+
+                type: "PUT",
+                url: "api/Process/",
+                dataType: "json",
+                data: person,
+                success: function (data) {
+
+                    refresh();
+
+                }
+            });
+
+        })
+
+       
+
+        refresh();
+        //#endregion
+        
     });
 </script>
 
+<div id="ProcessAPIContainer"></div>
 
 <h3>We suggest the following:</h3>
+
+Name:<input type="text" id="name" />
+Address:<input type="text" id="address" />
+<input type="button" id="saveDBToAPI" value="save" />
+
+<br />
+<br />
+ID:<input type="text" id="deleteID" />
+<input type="button" id="deleteDBToAPI" value="delete" />
+
+<br />
+<br />
+ID: <input type="text" id="updateID" />
+Name:<input type="text" id="updateName" />
+Address:<input type="text" id="updateAddress" />
+<input type="button" id="updateDBToAPI" value="update" />
+
 <ol class="round">
     <li class="one">
         <h5>Getting Started</h5>
